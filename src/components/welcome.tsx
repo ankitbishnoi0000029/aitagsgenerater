@@ -11,6 +11,10 @@ export default function HeroSection() {
         'how to get views on youtube shorts',
         'how to grow on youtube fast',
         'youtube without subscribers',
+        'grow on youtube',
+        'how to get views on youtube shorts',
+        'how to grow on youtube fast',
+        'how to get views on youtube shorts',
     ];
 
     return (
@@ -38,7 +42,7 @@ export default function HeroSection() {
             </div>
 
             {/* Tags */}
-            <div className="mt-10 flex flex-wrap justify-center gap-3 max-w-2xl">
+            <div className="mt-10 flex flex-wrap justify-center gap-3 max-w-2xl ">
                 {tags.map((tag, index) => (
                     <span
                         key={index}
