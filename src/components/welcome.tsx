@@ -1,6 +1,8 @@
 'use client';
 
 import Link from "next/link";
+import { FAQ } from "./faq";
+import { welcomeFaq } from "../store/data";
 
 export default function HeroSection() {
     const tags = [
@@ -85,7 +87,9 @@ export default function HeroSection() {
                     </div>
 
                 </div>
+                <FAQ data={welcomeFaq} />
             </div>
+            {/* FAQ */}
         </section>
     );
 }

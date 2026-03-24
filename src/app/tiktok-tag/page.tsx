@@ -1,8 +1,9 @@
 'use client';
 
+import { FAQ } from '@/src/components/faq';
 import TagBox from '@/src/components/tagbox';
 import { useToast } from '@/src/components/ui/toast';
-import { deafultTags } from '@/src/store/data';
+import { deafultTags, tiktokFAQ } from '@/src/store/data';
 import { useState } from 'react';
 
 export default function Page() {
@@ -137,19 +138,7 @@ export default function Page() {
             </div>
 
             {/* FAQ */}
-            <div className="mt-24 bg-[#1a1a1a] py-16 px-4">
-                <div className="max-w-4xl mx-auto">
-                    <h3 className="text-lg sm:text-xl font-semibold mb-6">
-                        Frequently Asked Questions
-                    </h3>
-
-                    <div className="space-y-4 text-gray-400 text-sm">
-                        <p>How often can I use the tag generator?</p>
-                        <p>Is this tool free to use?</p>
-                        <p>Do tags really help TikTok SEO?</p>
-                    </div>
-                </div>
-            </div>
+            <FAQ data={tiktokFAQ} />
 
         </div>
     );
